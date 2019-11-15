@@ -7,6 +7,10 @@
 [![prettier](https://img.shields.io/badge/styled%20with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![GitHub](https://img.shields.io/github/license/mtxr/vscode-sqltools?style=flat-square)](https://github.com/rminelli/backend-assessment-insurance-company/blob/master/LICENSE)
 
+Demo site is here: [Einstein.kb](http://ec2-3-15-149-11.us-east-2.compute.amazonaws.com/)
+User: admin@einstein.kb
+Password: admin
+
 Main technologies with which this project was developed:
 
 - Node.js
