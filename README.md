@@ -1,7 +1,7 @@
 # :books: Einstein.kb - Open Source Knowledge Base Software
 
 ## Einstein.kb is open source software to make it easier to use and administer a knowledge base, allowing you to manage users, categories, and contents
-# Please feel free to clone, download or perhaps contribute
+#### Please feel free to clone, download or perhaps contribute
 
 
 [![prettier](https://img.shields.io/badge/styled%20with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
