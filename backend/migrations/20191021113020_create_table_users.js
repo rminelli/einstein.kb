@@ -1,8 +1,13 @@
 const bcrypt = require('bcrypt-nodejs')
-const salt = bcrypt.genSaltSync(10);
-const encryptPassword = bcrypt.hashSync('admin', salt);
 
-exports.up = function(knex, Promise) {
+const encryptPassword = async password => {
+  const salt = bcrypt.genSaltSync(10);  
+  return await bcrypt.hashSync(password, salt);
+};
+
+exports.up = async function(knex, Promise) {
+  let _password = await encryptPassword('admin')
+
   return knex.schema.createTable("users", table => {
       table.increments("id").primary();
       table.string("name").notNull();
@@ -16,7 +21,7 @@ exports.up = function(knex, Promise) {
         {
           name: "admin",
           email: "admin@einstein.kb",
-          password: encryptPassword,
+          password: _password,
           admin: true
         }
       ]);
