@@ -11,6 +11,7 @@ Main technologies with which this project was developed:
 - Vue.js
 - PostgreSQL
 - MongoDB
+
 ##
 
 <p align="center">
@@ -27,7 +28,7 @@ Main technologies with which this project was developed:
 
 **Change the environment configuration file .env, with the access credentials for the database and your preferred private key**
 
-_Don't forget to create your database locally!_
+:heavy_exclamation_mark: _Don't forget to install and create your database locally! (PostgreSQL and MongoDB)_
 
 ```bash
 # Clone this repository
