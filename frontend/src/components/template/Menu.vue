@@ -113,16 +113,16 @@ export default {
   margin-left: 20px;
 }
 .tree-arrow.has-child:after {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBBQOCQ0YTpzfAAAAjklEQVQoz2NmYGBgYGAIdAw/LPHu6kUGDMAEoXjt+WXM5kck4VTAwMDAwMhoOgdTCRMyB5sSJlQuphImdCPRlTBhOgtVCRYFECWBjngUMDAwMDAy4VVwJnvdXjwKTmcvn47HDadzlk/D44szecun4gmHM/nLJuMJyTMFyyahm8gCoT4f+fz8ZtuyKZguAgDLtyS94NiAKwAAAABJRU5ErkJggg==");
-  border: 0;
-  width: 16px;
-  height: 16px;
-  background-repeat: no-repeat;
-  transform: rotate(0deg) translateY(-50%) translateX(-2px);
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBBQOCQ0YTpzfAAAAjklEQVQoz2NmYGBgYGAIdAw/LPHu6kUGDMAEoXjt+WXM5kck4VTAwMDAwMhoOgdTCRMyB5sSJlQuphImdCPRlTBhOgtVCRYFECWBjngUMDAwMDAy4VVwJnvdXjwKTmcvn47HDadzlk/D44szecun4gmHM/nLJuMJyTMFyyahm8gCoT4f+fz8ZtuyKZguAgDLtyS94NiAKwAAAABJRU5ErkJggg==") !important;
+  border: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  background-repeat: no-repeat !important;
+  transform: rotate(0deg) translateY(-50%) translateX(-2px) !important;
 }
 
 .tree-arrow.expanded.has-child:after {
-  transform: rotate(90deg) translateY(0%) translateX(-8px);
+  transform: rotate(90deg) translateY(0%) translateX(-8px) !important;
 }
 
 .tree-node.selected > .tree-content {
