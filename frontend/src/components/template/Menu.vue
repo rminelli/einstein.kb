@@ -104,7 +104,7 @@ export default {
   background: transparent;
 }
 .tree-anchor {
-  color: #fff;
+  color: #fff !important;
 }
 
 .tree-filter-empty {
