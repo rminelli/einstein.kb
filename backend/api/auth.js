@@ -14,7 +14,7 @@ module.exports = app => {
 
         if (!user) return res.status(400).send('User not found!')
 
-        const isMatch = bcrypt.compareSync(req.body.password, user.password)
+        const isMatch = await bcrypt.compareSync(req.body.password, user.password)
         if (!isMatch) return res.status(401).send('Email / password invalid!')
 
         const now = Math.floor(Date.now() / 1000)

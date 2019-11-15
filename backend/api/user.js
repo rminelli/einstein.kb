@@ -3,9 +3,9 @@ const bcrypt = require("bcrypt-nodejs");
 module.exports = app => {
   const { existsOrError, notExistsOrError, equalsOrError } = app.api.validation;
 
-  const encryptPassword = password => {
+  const encryptPassword = async password => {
     const salt = bcrypt.genSaltSync(10);
-    return bcrypt.hashSync(password, salt);
+    return await bcrypt.hashSync(password, salt);
   };
   const save = async (req, res) => {
     const user = { ...req.body }; // Spread operator for get body data
@@ -31,7 +31,7 @@ module.exports = app => {
     } catch (msg) {
       return res.status(400).send(msg); // Client error
     }
-    user.password = encryptPassword(user.password);
+    user.password = await encryptPassword(user.password);
     delete user.confirmPassword;
 
     if (user.id) {
