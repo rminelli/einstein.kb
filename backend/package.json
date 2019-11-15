@@ -1,0 +1,33 @@
+{
+  "name": "einstein.kb-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon",
+    "production": "pm2 start index.js --name knowledge-backend --watch"
+  },
+  "keywords": [],
+  "author": "Roberto de Figueiredo Minelli",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.19.0",
+    "bootstrap-vue": "^2.0.4",
+    "consign": "^0.1.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jwt-simple": "^0.5.6",
+    "knex": "^0.15.2",
+    "moment": "^2.24.0",
+    "mongoose": "^5.7.7",
+    "node-schedule": "^1.3.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^7.12.1",
+    "pm2": "^3.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
