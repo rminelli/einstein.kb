@@ -1,11 +1,10 @@
+[![prettier](https://img.shields.io/badge/styled%20with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![GitHub](https://img.shields.io/github/license/mtxr/vscode-sqltools?style=flat-square)](https://github.com/rminelli/backend-assessment-insurance-company/blob/master/LICENSE)
 # :books: Einstein.kb - Open Source Knowledge Base Software
 
 ## Einstein.kb is an open source software to make it easier to use and administer a knowledge base, allowing you to manage users, categories, and contents
 #### Please feel free to clone, download or perhaps contribute
 
-
-[![prettier](https://img.shields.io/badge/styled%20with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![GitHub](https://img.shields.io/github/license/mtxr/vscode-sqltools?style=flat-square)](https://github.com/rminelli/backend-assessment-insurance-company/blob/master/LICENSE)
 
 ### Demo site is here: [Einstein.kb](http://ec2-3-15-149-11.us-east-2.compute.amazonaws.com/)
 ```
