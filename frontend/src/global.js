@@ -1,6 +1,6 @@
 import Vue from "vue";
 
-export const baseApiUrl = "http://localhost:3800";
+export const baseApiUrl = "http://ec2-3-15-149-11.us-east-2.compute.amazonaws.com:3800";
 export const userKey = "__kb_user_key";
 
 export const showError = e => {
