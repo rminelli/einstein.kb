@@ -1,11 +1,15 @@
 <template>
   <div class="stat">
     <div class="stat-icon">
-      <i :class="icon" :style="style"></i>
+      <router-link to="/admin">
+        <i :class="icon" :style="style"></i>
+      </router-link>
     </div>
     <div class="stat-info">
-      <span class="stat-title">{{ title }}</span>
-      <span class="stat-value1">{{ value1 }}</span>      
+      <router-link to="/admin">
+        <span class="stat-title">{{ title }}</span>
+      </router-link>
+      <span class="stat-value1">{{ value1 }}</span>
       <span class="stat-value2">{{ value2 }}</span>
     </div>
   </div>
@@ -57,6 +61,6 @@ export default {
 
 .stat-value2 {
   font-size: 1.5rem;
-  color:sandybrown;
+  color: sandybrown;
 }
 </style>
