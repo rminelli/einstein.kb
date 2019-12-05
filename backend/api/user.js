@@ -76,14 +76,14 @@ module.exports = app => {
     try {
       const articles = await app.db("articles").where({ id: req.params.id });
 
-      notExistsOrError(articles, "Usuários possui artigos!");
+      notExistsOrError(articles, "Users have articles!");
 
       const rowsUpdated = await app
         .db("users")
         .update({ deletedAt: new Date() })
         .where({ id: req.params.id });
 
-      existsOrError(rowsUpdated, "Usuário não encontrado");
+      existsOrError(rowsUpdated, "User not found!");
 
       res.status(204).send();
     } catch (msg) {
